@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="790.0" style="-fx-background-color: #d8f8e1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.BuscarClienteController">
+   <children>
+      <TextField fx:id="txtBuscarCliente" layoutX="29.0" layoutY="54.0" prefHeight="25.0" prefWidth="423.0" />
+      <Button fx:id="btnBuscarCliente" layoutX="475.0" layoutY="54.0" mnemonicParsing="false" onAction="#buscarCliente" text="Buscar" />
+      <ScrollPane layoutX="23.0" layoutY="90.0" prefHeight="523.0" prefWidth="1098.0" style="-fx-background-radius: 15px;">
+         <content>
+            <TableView fx:id="tblClientes" prefHeight="511.0" prefWidth="1597.0" style="-fx-background-radius: 15px;">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="75.0" text="Id_Cliente" />
+                  <TableColumn fx:id="colRFC" prefWidth="75.0" text="RFC" />
+                  <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+                  <TableColumn fx:id="colApellidoP" prefWidth="108.0" text="Apellido Paterno" />
+                  <TableColumn fx:id="colApellidoM" prefWidth="105.0" text="Apellido Materno" />
+                  <TableColumn fx:id="colNumeroT" prefWidth="118.0" text="Numero Telefonico" />
+                  <TableColumn fx:id="colCorreo" prefWidth="110.0" text="Correo" />
+                  <TableColumn fx:id="colCalle" prefWidth="71.0" text="Calle" />
+                  <TableColumn fx:id="colNumeroE" prefWidth="85.0" text="Numero Ext" />
+                  <TableColumn fx:id="colNumeroI" minWidth="9.0" prefWidth="101.0" text="Numero Int" />
+                  <TableColumn fx:id="colCodigoP" minWidth="0.0" prefWidth="103.0" text="Codigo Postal" />
+                  <TableColumn fx:id="colColonia" prefWidth="81.0" text="Colonia" />
+                  <TableColumn fx:id="colMunicipio" prefWidth="103.0" text="Muinicipio" />
+                  <TableColumn fx:id="colEstado" prefWidth="84.0" text="Estado" />
+                  <TableColumn fx:id="colPais" minWidth="0.0" prefWidth="93.0" text="Pais" />
+                  <TableColumn fx:id="colFechaRegistro" prefWidth="125.0" text="Fecha de Registro" />
+                  <TableColumn fx:id="colEstatus" prefWidth="75.0" text="Estatus" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label layoutX="29.0" layoutY="26.0" text="BuscarCliente">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnModificar" layoutX="561.0" layoutY="54.0" mnemonicParsing="false" onAction="#modificarCliente" style="-fx-background-color: #ffff00;" text="Modificar Cliente" />
+   </children>
+</AnchorPane>
