@@ -1,0 +1,48 @@
+1.2. Organización de ficheros
+
+Las clases en Java se agrupan en paquetes. Estos paquetes se deben organizar de manera jerárquica, de forma que todo código desarrollado para el Ayuntamiento de Málaga tendrá que estar incluido dentro del paquete "eu.malaga"
+
+
+
+1.2.1.3. Sentencias de importación
+
+Tras la declaración del paquete se incluirán las sentencias de importación de los paquetes necesarios. Esta importación de paquetes obligatorios seguirá el siguiente orden:
+
+
+Paquetes del JDK de java.
+
+Paquetes de utilidades no pertenecientes al JDK de Java, de frameworks de desarrollo o de proyectos opensource tales como apache, hibernate, springframework, etc.
+
+Paquetes desarrollados para el Ayuntamiento de Málaga.
+
+Paquetes de la aplicación.
+
+
+
+1.2.1.4. Declaraciones de clases e interfaces
+Comentario de documentación de la clase/interfaz /** ... */
+Comentario de implementación de la clase/interfaz, si es necesario /* ... */
+
+
+
+
+1.5.2. Inicialización
+
+Toda variable local tendrá que ser inicializada en el momento de su declaración, salvo que su valor inicial dependa de algún valor que tenga que ser calculado previamente.
+
+
+1.8.2. Clases e interfaces
+
+Los nombres de clases deben ser sustantivos y deben tener la primera letra en mayúsculas. Si el nombre es compuesto,
+
+
+1.8.3. Métodos
+
+Los métodos deben ser verbos escritos en minúsculas.
+
+1.8.4. Variables
+
+Las variables se escribirán siempre en minúsculas.
+
+
+
